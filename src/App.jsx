@@ -63,9 +63,12 @@ function HomeView({ state, setState, onStart, onProgress }) {
         <div>
           <p className="eyebrow">每日10题，提升计算力</p>
           <h1>计算大闯关</h1>
-          <p className="hero-copy">Design by NUS刘老师。</p>
+          <p className="hero-copy">Designed by NUS刘老师。</p>
         </div>
-        <img className="teacher-photo" src="./teacher.jpeg" alt="NUS刘老师" />
+        <div className="teacher-card">
+          <img className="teacher-photo" src="./teacher.jpeg" alt="NUS刘老师" />
+          <p>数学 + 编程 + AI，欢迎联系我！</p>
+        </div>
       </section>
 
       <section className="profile-grid">

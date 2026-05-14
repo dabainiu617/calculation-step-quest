@@ -94,6 +94,21 @@ h2 {
   color: #5f6f7a;
 }
 
+.teacher-card {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  color: #344955;
+  font-weight: 800;
+  text-align: center;
+}
+
+.teacher-card p {
+  max-width: 220px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
 .teacher-photo {
   width: clamp(112px, 18vw, 170px);
   aspect-ratio: 1;
@@ -549,12 +564,13 @@ select:focus {
     grid-template-columns: 1fr;
   }
 
+  .teacher-card,
   .teacher-photo,
   .progress-ring {
     width: 100%;
   }
 
-  .teacher-photo {
+  .teacher-card {
     max-width: 220px;
     justify-self: center;
   }
