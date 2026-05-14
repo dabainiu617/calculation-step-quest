@@ -94,18 +94,13 @@ h2 {
   color: #5f6f7a;
 }
 
-.rule-box {
-  display: grid;
-  min-width: 130px;
-  padding: 18px;
+.teacher-photo {
+  width: clamp(112px, 18vw, 170px);
+  aspect-ratio: 1;
   border-radius: 8px;
-  color: #ffffff;
-  background: #2f6f73;
-  text-align: center;
-}
-
-.rule-box strong {
-  font-size: 2rem;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 12px 30px rgba(36, 55, 70, 0.18);
 }
 
 .profile-grid,
@@ -554,9 +549,14 @@ select:focus {
     grid-template-columns: 1fr;
   }
 
-  .rule-box,
+  .teacher-photo,
   .progress-ring {
     width: 100%;
+  }
+
+  .teacher-photo {
+    max-width: 220px;
+    justify-self: center;
   }
 
   .dashboard-strip {

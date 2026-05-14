@@ -61,14 +61,11 @@ function HomeView({ state, setState, onStart, onProgress }) {
     <main className="screen home-screen">
       <section className="hero-panel">
         <div>
-          <p className="eyebrow">第4步到第22步</p>
-          <h1>计算闯关</h1>
-          <p className="hero-copy">选择类型和关卡，每次完成10题练习。</p>
+          <p className="eyebrow">每日10题，提升计算力</p>
+          <h1>计算大闯关</h1>
+          <p className="hero-copy">Design by NUS刘老师。</p>
         </div>
-        <div className="rule-box">
-          <strong>{RULES.PASSING_SCORE}/{RULES.PROBLEMS_PER_SESSION}</strong>
-          <span>本次达标</span>
-        </div>
+        <img className="teacher-photo" src="./teacher.jpeg" alt="NUS刘老师" />
       </section>
 
       <section className="profile-grid">
